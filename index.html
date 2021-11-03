@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Speed Calculator</title>
+    <link rel="stylesheet" href="speed_app.css">
+</head>
+<body>
+    <main>
+        <h1>The Speed Calculator</h1>
+        <script>
+            "use strict";
+            
+            // get distance travelled
+            const distance = parseInt(prompt("Enter distance driven"));
+
+            // get time spent travelling
+            const time = parseInt(prompt("Enter time spent "));
+
+            // calculate speed
+            const speed = parseFloat(distance/time);
+
+            // display results
+            const html = `<p><label>Distance: </label>${distance} km</p>
+                <p><label>Time: </label>${time} h</p>
+                <p><label>Speed: </label>${speed.toFixed(2)} km/h</p>`;
+            document.write(html);
+        </script>    
+    </main>
+</body>
+</html>
