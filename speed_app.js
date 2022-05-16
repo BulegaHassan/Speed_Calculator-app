@@ -2,7 +2,7 @@
 
 const $ = selector => document.querySelector(selector);
 
-const getErrorMsg1 = lbl => `${lbl} must be a valid number `;
+const getErrorMsg1 = lbl => `${lbl} must be a valid number . `;
 const getErrorMsg2 = lbl => `${lbl} must be greater than zero`;
 
 const focusAndSelect = selector => {
@@ -15,7 +15,7 @@ const processEntries = () => {
     const distance = parseFloat($("#distance").value);
     const time = parseFloat($("#time").value);
 
-    if (isNaN(distance) ) {
+    if (isNaN(distance)) {
         alert(getErrorMsg1("Distance driven"));
         focusAndSelect("#distance");
     } else if (isNaN(time)) {
@@ -30,9 +30,9 @@ const processEntries = () => {
     } else {
         $("#speed").value = (distance / time).toFixed(2);
     }
-    
+
 };
- 
+
 const convertSpeed = () => {
     let convert_speed = $("#speed").value / 3.6;
     convert_speed = convert_speed.toFixed(2);
@@ -51,6 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
     $("#calculate").addEventListener("click", processEntries);
     $("#convert").addEventListener("click", convertSpeed);
     $("#clear").addEventListener("click", clearEntries);
-    
+
     $("#distance").focus();
 });
