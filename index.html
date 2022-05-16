@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Speed Calculator</title>
     <link rel="stylesheet" href="speed_app.css">
 </head>
+
 <body>
+
     <main>
-        <main>
-            <h1>The Speed Calculator</h1>
-            <div>
-                <label for="distance">Distance Driven:</label>
-                <input type="text" id="distance"> km
-            </div>
-            <div>
-                <label for="time">Time taken:</label>
-                <input type="text" id="time"> h
-            </div>
-            <div>
-                <label for="speed">Speed:</label>
-                <input type="text" id="speed" disabled> km/h
-            </div>
-            <div>
-                <label>&nbsp;</label>
-                <input type="button" id="calculate" value="Calculate Speed">
-                <input type="button" id="clear" value="Clear Entries">
-            </div>
-            <div>
-                
-               
-            </div>
-            <div>
-                <label>&nbsp;</label>
-                <input type="button" id="convert" value="Convert to m/s">
-            </div>
-            <div>
-                <label for="speed_convert">Speed Converted:</label>
-                <input type="text" id="speed_convert" disabled> m/s
-            </div>
-        </main>
-        <script src="speed_app.js"></script> 
+        <h1>The Speed Calculator</h1>
+        <div>
+            <label for="distance">Distance Driven:</label>
+            <input type="text" id="distance"> km
+        </div>
+        <div>
+            <label for="time">Time taken:</label>
+            <input type="text" id="time"> h
+        </div>
+        <div>
+            <label for="speed">Speed:</label>
+            <input type="text" id="speed" disabled> km/h
+        </div>
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" id="calculate" value="Calculate Speed">
+            <input type="button" id="clear" value="Clear Entries">
+        </div>
+        <div>
+
+
+        </div>
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" id="convert" value="Convert to m/s">
+        </div>
+        <div>
+            <label for="speed_convert">Speed Converted:</label>
+            <input type="text" id="speed_convert" disabled> m/s
+        </div>
     </main>
+    <!-- <script src="speed_app.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="lib_speed.js"></script>
+    <script src="speed.js"></script>
+
 </body>
+
 </html>
